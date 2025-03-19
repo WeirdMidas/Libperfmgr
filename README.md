@@ -56,7 +56,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
     - Fstrim on cache, system, data and persist every 7 days.
     - Compile, sync and cleanup of ART every 7 days.
     - Cleans cache and junk from apps every 7 days.
-    - Applies Vacuum, Index and Analyze on the database every 15 days.
+    - Applies Vacuum, Reindex and Analyze on the database every 15 days.
     - Applies Zipalign every 15 days.
 - Cgroup script, for better optimization of cgroups, threads, etc. without having to add or remove things.
 - Added adjguard, for users who want to prevent LMK from killing their most beloved apps.
