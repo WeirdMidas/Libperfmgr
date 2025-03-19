@@ -94,3 +94,6 @@ Install vtools and bind APPs to power mode.
 Matt Yang — For the Original Module and Some Functions from qti-mem-opt and my inspiration for create this.
 Pedrozz, Tytydraco, korom42, yinwanxi and all the other contributors to their projects, I want to thank you all for helping with this project. I will try to extract as much as I can for each SOC because of all of you.
 ```
+
+# Exclaimer
+Until I know how to update all the fork files, I will update you via releases.
