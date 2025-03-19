@@ -13,7 +13,7 @@ Details see [the lead project](https://github.com/yc9559/sdm855-tune/commits/mas
 
 And then, answer this form:
 
-1. What is the frequency your processor uses to open these applications: Devcheck, RAR and any game that you consider heavy. And the available frequencies of your processor (which it transitions to, can be found in /sys/devices/system/cpu/cpufreq/policy*/scaling_available_frequencies and do this in ALL CLUSTERS, to help as much as possible). And show what is your DDR max frequency.
+1. What is the frequency your processor uses to open these applications: Devcheck, RAR and any game that you consider heavy. And the available frequencies of your processor (which it transitions to, can be found in /sys/devices/system/cpu/cpufreq/policy*/scaling_available_frequencies and do this in ALL CLUSTERS, to help as much as possible). And show what is your DDR path and bw_hwmon max frequency.
 
 2. What are its governor functions (which adjustable ones it has) and which governor does your kernel use as the main one (schedutil or interactive).
 
