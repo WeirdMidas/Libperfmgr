@@ -65,10 +65,10 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - Focuses on compatibility, stability and energy efficiency above all. With each update, an optimization for at least one platform is guaranteed, or a new SOC is added (but this depends on the users).
 
 # Profiles
-- powersave: based on balance mode, but with lower max frequency
-- balance: smoother than the stock config with lower power consumption
-- performance: dynamic stune boost = 30 with no frequency limitation
-- fast: providing stable performance capacity considering the TDP limitation of device chassis
+- powersave: focused on saving as much energy as possible, without drastically impacting the performance and fluidity of the device (but it will still suffer in situations of load fluctuation).
+- balance: smoother than stock, and consumes less energy overall. Recommended for most users who want to save energy, but want to maintain performance in everyday use.
+- performance: without frequency limitation, focused on bringing the original performance that the device has but improved with general optimizations.
+- fast: brings stable performance considering the TDP of the device, focused on being 100% stable in most situations by being fast and quickly lowering frequencies.
 
 # Installation
 - Download zip in Release Page
