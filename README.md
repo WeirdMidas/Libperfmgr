@@ -46,7 +46,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
     sdm845 (Complete)
     sdm765/sdm765g (Complete)
     sdm730/sdm730g (Complete)
-    sdm680 (Initial)
+    sdm680 (Complete)
     sdm675 (Complete)
     sdm710/sdm712 (Complete)
 ```
