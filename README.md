@@ -1,5 +1,5 @@
 # Libperfmgr
-![8887e2e87f38b5a9b0abe99fad5f045a](https://github.com/user-attachments/assets/160ac75a-03b5-49b3-ad7e-fb8a7e592026)
+![387021bae735029a39199dfd65a80556](https://github.com/user-attachments/assets/94ee655e-504f-402d-889c-c3d68552f098)
 
 # 设计目标
 The previous [Project WIPE](https://github.com/yc9559/cpufreq-interactive-opt), automatically adjust the `interactive` parameters via simulation and heuristic optimization algorithms, and working on all mainstream devices which use `interactive` as default governor. The recent [WIPE v2](https://github.com/yc9559/wipe-v2), improved simulation supports more features of the kernel and focuses on rendering performance requirements, automatically adjusting the `interactive`+`HMP`+`input boost` parameters. However, after the EAS is merged into the mainline, the simulation difficulty of auto-tuning depends on raise. It is difficult to simulate the logic of the EAS scheduler. In addition, EAS is designed to avoid parameterization at the beginning of design, so for example, the adjustment of schedutil has no obvious effect.  
