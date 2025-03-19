@@ -99,4 +99,4 @@ Pedrozz, Tytydraco, korom42, yinwanxi and all the other contributors to their pr
 ```
 
 # Exclaimer
-Until I know how to update all the fork files, I will update you via releases.
+I don't know how to make full commits, so until then the updates won't be committed.
