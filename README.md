@@ -6,104 +6,91 @@ The previous [Project WIPE](https://github.com/yc9559/cpufreq-interactive-opt), 
 
 Details see [the lead project](https://github.com/yc9559/sdm855-tune/commits/master) & [perfd-opt commits](https://github.com/yc9559/perfd-opt/commits/master)    
 
-## Profiles
+# How to help...
+- If your processor is not listed in the list, please, first: make an issue containing the nickname [integration of (name of your processor)]
 
+And then, answer this form:
+
+1. What is the frequency your processor uses to open these applications: Devcheck, RAR and any game that you consider heavy. And the available frequencies of your processor (which it transitions to, can be found in /sys/devices/system/cpu/cpufreq/policy*/scaling_available_frequencies and do this in ALL CLUSTERS, to help as much as possible). And show what is your DDR max frequency.
+
+2. What are its governor functions (which adjustable ones it has) and which governor does your kernel use as the main one (schedutil or interactive).
+
+3. Name of your processor. And what is the energy efficiency cost it has when moving up and down (tell the minimum and maximum).
+
+4. How many hours you last moving without turning off the screen.
+
+5. What tunables do you have in /proc/sys/kernel?
+
+6. What FPS do you achieve in your favorite game without having an interference module, be pure.
+
+7. And finally, the name of your platform (which can be obtained via this command: getprop ro.board.platform).
+
+# Additional help
+If you want to help in another way, for example, recommending adjustments/tweaks, you can make an issue with the nickname [adjustment suggestion] and then show what the adjustment was, ALONG with any benchmark you have done, to test if you really got any improvement with the adjustment.
+
+# Prerequisites
+- Android 11-15. If you have a lower Android, it is not recommended to use the module because it is adapted for current Androids (where resource management has changed abruptly).
+- Do not have a messy kernel (like many Xiaomi).
+- Follow the compatibility list, do not force the module on devices with incompatible SOCs.
+- Do not have too high expectations of the performance you will get, remember that this is a module that needs to adapt to many different users and socs, so some socs may have initial or full support.
+
+# Compability List
+- For now, the project only supports snapdragon. I want to master the efficiency of snapdragon to avoid future problems with mediatek and derivatives.
+
+```
+    sdm865
+    sdm855/sdm855+
+    sdm845
+    sdm765/sdm765g
+    sdm730/sdm730g
+    sdm680
+    sdm675
+    sdm710/sdm712
+```
+
+# Features
+- Cleanup script, which applies these cleanups every 7-15 days:
+    - Fstrim on cache, system, data and persist every 7 days.
+    - Compile, sync and cleanup of ART every 7 days.
+    - Cleans cache and junk from apps every 7 days.
+    - Applies Vacuum, Index and Analyze on the database every 15 days.
+    - Applies Zipalign every 15 days.
+- Cgroup script, for better optimization of cgroups, threads, etc. without having to add or remove things.
+- Added adjguard, for users who want to prevent LMK from killing their most beloved apps.
+- Added memperfd, a better and adapted variant for current Androids of Matt Yang's qti-mem-opt. The focus is to reduce CPU usage of memory management while improving memory management. With the focus on stability and power consumption above all.
+- All the features and scripts from Matt Yang's original Perfd opt, with improvements and updates to work with current and updated rooting solutions.
+- Focuses on compatibility, stability and energy efficiency above all. With each update, an optimization for at least one platform is guaranteed, or a new SOC is added (but this depends on the users).
+
+# Profiles
 - powersave: based on balance mode, but with lower max frequency
 - balance: smoother than the stock config with lower power consumption
 - performance: dynamic stune boost = 30 with no frequency limitation
 - fast: providing stable performance capacity considering the TDP limitation of device chassis
 
-```plain
-sdm865
-- powersave:    1.8+1.6+2.4g, boost 1.8+2.0+2.6g, min 0.3+0.7+1.1
-- balance:      1.8+2.0+2.6g, boost 1.8+2.4+2.7g, min 0.7+0.7+1.1
-- performance:  1.8+2.4+2.8g, boost 1.8+2.4+2.8g, min 0.7+0.7+1.1
-- fast:         1.8+2.0+2.7g, boost 1.8+2.4+2.8g, min 0.7+1.2+1.2
+# Installation
+- Download zip in Release Page
+- Flash in Magisk manager, Kernelsu or Other Root Solution
+- Reboot
+- Check whether /sdcard/Android/panel_powercfg.txt exists
 
-sdm855/sdm855+
-- powersave:    1.7+1.6+2.4g, boost 1.7+2.0+2.6g, min 0.3+0.7+0.8
-- balance:      1.7+2.0+2.6g, boost 1.7+2.4+2.7g, min 0.5+0.7+0.8
-- performance:  1.7+2.4+2.8g, boost 1.7+2.4+2.8/2.9g, min 0.5+0.7+0.8
-- fast:         1.7+2.0+2.7g, boost 1.7+2.4+2.8/2.9g, min 0.5+1.2+1.2
+# Switch modes
+# Switching on boot
 
-sdm845
-- powersave:    1.7+2.0g, boost 1.7+2.4g, min 0.3+0.3
-- balance:      1.7+2.4g, boost 1.7+2.7g, min 0.5+0.8
-- performance:  1.7+2.8g, boost 1.7+2.8g, min 0.5+0.8
-- fast:         1.7+2.4g, boost 1.7+2.8g, min 0.5+1.6
+- Open /sdcard/Android/panel_powercfg.txt
+- Edit line default_mode=balance, where balance is the default mode applied at boot
+- Reboot
 
-sdm765/sdm765g
-- powersave:    1.8+1.7+2.0g, boost 1.8+2.0+2.2g, min 0.3+0.6+0.8
-- balance:      1.8+2.0+2.2g, boost 1.8+2.2+2.3/2.4g, min 0.5+0.6+0.6
-- performance:  1.8+2.2+2.3g, boost 1.8+2.2+2.3/2.4g, min 0.5+0.6+0.8
-- fast:         1.8+2.0+2.2g, boost 1.8+2.2+2.3/2.4g, min 0.5+1.1+1.4
+# Switching after boot
 
-sdm730/sdm730g
-- powersave:    1.7+1.5g, boost 1.7+1.9g, min 0.3+0.3
-- balance:      1.7+1.9g, boost 1.7+2.1g, min 0.5+0.6
-- performance:  1.8+2.2g, boost 1.8+2.2g, min 0.5+0.6
-- fast:         1.8+1.9g, boost 1.8+2.2g, min 0.5+1.2
+Option 1:
+Exec sh /data/powercfg.sh balance, where balance is the mode you want to switch.
 
-sdm675
-- powersave:    1.7+1.5g, boost 1.7+1.7g, min 0.3+0.3
-- balance:      1.7+1.7g, boost 1.7+1.9g, min 0.5+0.6
-- performance:  1.8+2.0g, boost 1.8+2.0g, min 0.5+0.6
-- fast:         1.8+1.7g, boost 1.8+2.0g, min 0.5+1.2
-
-sdm710/sdm712
-- powersave:    1.7+1.8g, boost 1.7+2.0g, min 0.3+0.3
-- balance:      1.7+2.0g, boost 1.7+2.2/2.3g, min 0.5+0.6
-- performance:  1.7+2.2g, boost 1.7+2.2/2.3g, min 0.5+0.6
-- fast:         1.7+2.0g, boost 1.7+2.2/2.3g, min 0.5+1.5
-```
-
-## Requirements
-
-1. Android >= 8.0
-2. Rooted
-3. Magisk >= 19.0
-
-## Installation
-
-1. Download zip in [Release Page](https://github.com/yc9559/perfd-opt/releases)
-2. Flash in Magisk manager
-3. Reboot
-4. Check whether `/sdcard/Android/panel_powercfg.txt` exists
-
-## Switch modes
-
-### Switching on boot
-
-1. Open `/sdcard/Android/panel_powercfg.txt`
-2. Edit line `default_mode=balance`, where `balance` is the default mode applied at boot
-3. Reboot
-
-### Switching after boot
-
-Option 1:  
-Exec `sh /data/powercfg.sh balance`, where `balance` is the mode you want to switch.  
-
-Option 2:  
-Install [vtools](https://www.coolapk.com/apk/com.omarea.vtools) and bind APPs to power mode.  
+Option 2:
+Install vtools and bind APPs to power mode.
 
 ## Credit
 
 ```plain
-@屁屁痒
-provide /vendor/etc & sched tunables on Snapdragon 845
-
-@林北蓋唱秋
-provide /vendor/etc on Snapdragon 675
-
-@酪安小煸
-provide /vendor/etc on Snapdragon 710
-
-@沉迷学习日渐膨胀的小学僧
-help testing on Snapdragon 855
-
-@NeonXeon
-provide information about dynamic stune
-
-@rfigo
-provide information about dynamic stune
+Matt Yang — For the Original Module and Some Functions from qti-mem-opt and my inspiration for create this.
+Pedrozz, Tytydraco, korom42, yinwanxi and all the other contributors to their projects, I want to thank you all for helping with this project. I will try to extract as much as I can for each SOC because of all of you.
 ```
