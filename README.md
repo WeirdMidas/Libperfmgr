@@ -41,14 +41,14 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - For now, the project only supports snapdragon. I want to master the efficiency of snapdragon to avoid future problems with mediatek and derivatives.
 
 ```
-    sdm865
-    sdm855/sdm855+
-    sdm845
-    sdm765/sdm765g
-    sdm730/sdm730g
-    sdm680
-    sdm675
-    sdm710/sdm712
+    sdm865 (Complete)
+    sdm855/sdm855+ (Complete)
+    sdm845 (Complete)
+    sdm765/sdm765g (Complete)
+    sdm730/sdm730g (Complete)
+    sdm680 (Initial)
+    sdm675 (Complete)
+    sdm710/sdm712 (Complete)
 ```
 
 # Features
