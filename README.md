@@ -105,9 +105,9 @@ sdm730/sdm730g (Schedutil)
 
 sdm680 (Schedutil)
 - powersave:    1.8+2.2g, boost 1.9+2.4g, min 0.3+0.8
-- balance:    1.8+2.2g, boost 1.9+2.4g, min 0.6+0.8
-- performance:    1.9+2.4g, boost 1.9+2.4g, min 0.6+1.0
-- fast:    1.9+2.4g, boost 1.9+2.4g, min 0.6+1.3
+- balance:      1.8+2.2g, boost 1.9+2.4g, min 0.6+0.8
+- performance:  1.9+2.4g, boost 1.9+2.4g, min 0.6+1.0
+- fast:         1.9+2.4g, boost 1.9+2.4g, min 0.6+1.3
 
 sdm675 (Schedutil)
 - powersave:    1.7+1.5g, boost 1.7+1.7g, min 0.3+0.3
