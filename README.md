@@ -70,6 +70,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - performance: without frequency limitation, focused on bringing the original performance that the device has but improved with general optimizations.
 - fast: brings stable performance considering the TDP of the device, focused on being 100% stable in most situations by being fast and quickly lowering frequencies.
 
+SOC's profiles:
 Perhaps not all SOCs will have the signaling of how much the "boost" is.
 ```SOC's
 sdm865 (Schedutil)
@@ -121,7 +122,7 @@ sdm710/sdm712 (Schedutil)
 - fast:         1.7+2.0g, boost 1.7+2.2/2.3g, min 0.5+1.5
 ```
 
-- Scheduler for Each Storage
+Scheduler for Each Storage
 ```IO SCHEDULER
 - CFQ for UFS
 - BFQ for EMMC
