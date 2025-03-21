@@ -70,8 +70,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - performance: without frequency limitation, focused on bringing the original performance that the device has but improved with general optimizations.
 - fast: brings stable performance considering the TDP of the device, focused on being 100% stable in most situations by being fast and quickly lowering frequencies.
 
-- SOC's Profiles
-- Perhaps not all SOCs will have the signaling of how much the "boost" is.
+Perhaps not all SOCs will have the signaling of how much the "boost" is.
 ```SOC's
 sdm865 (Schedutil)
 - powersave:    1.8+1.6+2.4g, boost 1.8+2.0+2.6g, min 0.3+0.7+1.1
