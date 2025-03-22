@@ -128,12 +128,6 @@ sdm710/sdm712 (Schedutil)
 - fast:         1.7+2.0g, boost 1.7+2.2/2.3g, min 0.5+1.5
 ```
 
-Scheduler for Each Storage
-```IO SCHEDULER
-- CFQ for UFS
-- BFQ for EMMC
-- MQ-DEADLINE for SD CARD
-```
 # Installation
 - Download zip in Release Page
 - Flash in Magisk manager, Kernelsu or Other Root Solution
