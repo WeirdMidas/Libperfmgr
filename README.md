@@ -6,7 +6,13 @@ The previous [Project WIPE](https://github.com/yc9559/cpufreq-interactive-opt), 
 
 [WIPE v2](https://github.com/yc9559/wipe-v2) focuses on meeting performance requirements when interacting with APP, while reducing non-interactive lag weights, pushing the trade-off between fluency and power saving even further. `QTI Boost Framework`, which must be disabled before applying optimization, is able to dynamically override parameters based on perf hint. This project utilizes `QTI Boost Framework` and extends the ability of override custom parameters. When launching APPs or scrolling the screen, applying more aggressive parameters to improve response at an acceptable power penalty. When there is no interaction, use conservative parameters, use small core clusters as much as possible, and run at a higher energy efficiency OPP under heavy load.  
 
-Details see [the lead project](https://github.com/yc9559/sdm855-tune/commits/master) & [perfd-opt commits](https://github.com/yc9559/perfd-opt/commits/master)    
+Details see [the lead project](https://github.com/yc9559/sdm855-tune/commits/master) & [perfd-opt commits](https://github.com/yc9559/perfd-opt/commits/master)  
+
+Overall, this is the explanation of Matt Yang's Perfd-opt. Full credit to him. Now, with the adaptation to current Androids, I was able to revive the module to work today. And now the module has a new look, it is basically to give the same feeling as the Google Pixel, but on other devices.
+
+Libperfmgr, based on the same function as the Pixel. It is a module that tries to bring fluidity and energy saving limits and push them beyond what would otherwise be possible, providing performance and profiles for different users, and especially for specific Soc's. What does it mean? That the module has specific optimizations for each processor! In addition to the general optimizations, it will also have the profile optimizations that are specified for each processor.
+
+Don't be alarmed, if you don't find your processor in the compatibility list, you can help to integrate it into the list.
 
 # How to help...
 - If your processor is not listed in the list, please, first: make an issue containing the nickname [integration of (name of your processor)]
