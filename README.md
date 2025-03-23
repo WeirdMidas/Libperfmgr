@@ -57,6 +57,12 @@ If you want to help in another way, for example, recommending adjustments/tweaks
     sdm710/sdm712 (Complete)
 ```
 
+# Explanation of each "Compatibility Stage":
+- Initial: Does not have complete optimizations, is still in EXTREMELY EXPERIMENTAL phases! Needs extra feedback.
+- Complete: In the profiles section, optimizations are complete, allowing the user to use the adjustments as they see fit.
+- Complete + Extra: In addition to the traditional optimizations, it comes with perfboost optimization. To ensure better response and agility.
+- Complete + Extra + Specialization: Fully optimized, a SOC containing this indication is said to be fully optimized for maximum possible energy savings, compatibility and performance.
+
 # Features
 - Cleanup script, which applies these cleanups every 7-15 days:
     - Fstrim on cache, system, data and persist every 7 days.
