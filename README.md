@@ -47,14 +47,14 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - For now, the project only supports snapdragon. I want to master the efficiency of snapdragon to avoid future problems with mediatek and derivatives.
 
 ```
-    sdm865 (Complete)
-    sdm855/sdm855+ (Complete)
-    sdm845 (Complete)
-    sdm765/sdm765g (Complete)
-    sdm730/sdm730g (Complete)
-    sdm680 (Initial)
-    sdm675 (Complete)
-    sdm710/sdm712 (Complete)
+    sdm865 (Complete + Extra)
+    sdm855/sdm855+ (Complete + Extra)
+    sdm845 (Complete + Extra)
+    sdm765/sdm765g (Complete + Extra)
+    sdm730/sdm730g (Complete + Extra)
+    sdm680 (Initial + Extra)
+    sdm675 (Complete + Extra)
+    sdm710/sdm712 (Complete + Extra)
 ```
 
 # Explanation of each "Compatibility Stage":
@@ -69,7 +69,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
     - Fstrim on cache, system, data and persist every 7 days.
     - Compile, sync and cleanup of ART every 7 days.
     - Cleans cache and junk from apps every 7 days.
-    - Applies Vacuum, Reindex and Analyze on the database every 15 days.
+    - Applies Vacuum, Reindex, Analyze and Optimize on the database every 15 days.
     - Applies Zipalign every 15 days.
 - Cgroup script, for better optimization of cgroups, threads, etc. without having to add or remove things.
 - Added adjguard, for users who want to prevent LMK from killing their most beloved apps.
@@ -117,8 +117,8 @@ sdm730/sdm730g (Schedutil)
 - fast:         1.8+1.9g, boost 1.8+2.2g, min 0.5+1.2
 
 sdm680 (Schedutil)
-- powersave:    1.8+2.2g, boost 1.9+2.4g, min 0.3+0.8
-- balance:      1.8+2.2g, boost 1.9+2.4g, min 0.6+0.8
+- powersave:    1.8+2.2g, boost 1.9+2.4g, min 0.3+0.3
+- balance:      1.8+2.2g, boost 1.9+2.4g, min 0.6+1.0
 - performance:  1.9+2.4g, boost 1.9+2.4g, min 0.6+1.0
 - fast:         1.9+2.4g, boost 1.9+2.4g, min 0.6+1.3
 
