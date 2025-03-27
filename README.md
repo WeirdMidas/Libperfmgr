@@ -166,5 +166,4 @@ Pedrozz, Tytydraco, korom42, yinwanxi and all the other contributors to their pr
 ```
 
 # Exclaimer
-I don't know how to make full commits, so until then the updates won't be committed.
-Profiles
+The module will receive a rework for optimization reasons and personal motivations. The previous versions were deleted. I will notify and leave the download of the tested and stable version when I get it.
