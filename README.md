@@ -1,5 +1,7 @@
 # Libperfmgr
-![8fe4ab401642c2758a355cd1667446d6_1](https://github.com/user-attachments/assets/b2389d6b-3e87-485b-aa99-323616de7112)
+![742b6dbaa02122922bf7b891265fde0c_1](https://github.com/user-attachments/assets/7581dec5-d7c5-4123-beba-e67c584dedfd)
+
+A Magisk/KSU module made especially for Qualcomm devices with Adreno GPUs. The intention is to mimic the power-libperfmgr of Pixel phones and generate a module that imitates the performance, power consumption and adaptability of the Pixel engine but for different SOCs, taking advantage of Perfhal and the old QTI Boost Framework and making it adapt to the custom parameters of general optimizations, and the parameters specific to each SOC.
 
 # 设计目标
 The previous [Project WIPE](https://github.com/yc9559/cpufreq-interactive-opt), automatically adjust the `interactive` parameters via simulation and heuristic optimization algorithms, and working on all mainstream devices which use `interactive` as default governor. The recent [WIPE v2](https://github.com/yc9559/wipe-v2), improved simulation supports more features of the kernel and focuses on rendering performance requirements, automatically adjusting the `interactive`+`HMP`+`input boost` parameters. However, after the EAS is merged into the mainline, the simulation difficulty of auto-tuning depends on raise. It is difficult to simulate the logic of the EAS scheduler. In addition, EAS is designed to avoid parameterization at the beginning of design, so for example, the adjustment of schedutil has no obvious effect.  
