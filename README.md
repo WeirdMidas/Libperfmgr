@@ -40,7 +40,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 
 # Prerequisites
 - Android 11-15. If you have a lower Android, it is not recommended to use the module because it is adapted for current Androids (where resource management has changed abruptly).
-- Do not have a messy kernel (like many Xiaomi).
+- Don't have a messy or too "mimic" kernel (like many custom rom or custom kernel that tend to hide, modify and trap certain optimizations for reasons of "it's to specialize in my kernel")
 - Have a UFS storage. (Optional, it is just to ensure better I/O performance so that the module can be fully effective).
 - Follow the compatibility list, do not force the module on devices with incompatible SOCs.
 - Do not have too high expectations of the performance you will get, remember that this is a module that needs to adapt to many different users and socs, so some socs may have initial or full support.
