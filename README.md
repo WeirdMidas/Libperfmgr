@@ -49,17 +49,18 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - For now, the project only supports snapdragon. I want to master the efficiency of snapdragon to avoid future problems with mediatek and derivatives.
 
 ```
-    sdm865 (Complete + Extra)
-    sdm855/sdm855+ (Complete + Extra)
-    sdm845 (Complete + Extra)
-    sdm765/sdm765g (Complete + Extra)
-    sdm730/sdm730g (Complete + Extra)
-    sdm680 (Initial + Extra)
-    sdm675 (Complete + Extra)
-    sdm710/sdm712 (Complete + Extra)
+    sdm865 (Unadapted)
+    sdm855/sdm855+ (Unadapted)
+    sdm845 (Unadapted)
+    sdm765/sdm765g (Unadapted)
+    sdm730/sdm730g (Unadapted)
+    sdm680 (Initial)
+    sdm675 (Unadapted)
+    sdm710/sdm712 (Unadapted)
 ```
 
 # Explanation of each "Compatibility Stage":
+- Unadapted and Adapted: Specifically for SOCs that came with Matt Yang's Perfd-opt. Those that have not been adapted to be "improved" for today's consumption and efficiency will be flagged with this.
 - Initial: Does not have complete optimizations, is still in EXTREMELY EXPERIMENTAL phases! Needs extra feedback.
 - Complete: In the profiles section, optimizations are complete, allowing the user to use the adjustments as they see fit.
 - Initial + Extra: It is still in the testing phase but contains extra optimizations like Perfboost.
