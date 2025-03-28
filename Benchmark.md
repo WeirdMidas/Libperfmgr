@@ -6,7 +6,7 @@ An area for benchmark questions.
 
 # Memperfd
 
-- ZRAM compression rate: 3.23x with 1440mb of ZRAM (11min post boot).
+- ZRAM compression rate: 3.16x with 1440mb of ZRAM (11min post boot).
 
 # Libperfmgr
 
