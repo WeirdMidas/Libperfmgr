@@ -84,6 +84,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - Download zip in Release Page
 - Flash in Magisk manager, Kernelsu or Other Root Solution
 - Reboot
+- Wait 30 seconds after boot for the module to start. It will only take this long during boot
 - Check whether /sdcard/Android/panel_powercfg.txt exists
 
 # Switch modes
