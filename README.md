@@ -63,7 +63,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 
 # Features
 - Cleanup script, which applies these cleanups every 7-15 days:
-    - Fstrim on cache, system, data and persist every 7 days.
+    - Fstrim on cache, system, data, persist, vendor, product and system_ext every 7 days.
     - Compile, sync and cleanup of ART every 7 days.
     - Cleans cache and junk from apps every 7 days.
     - Applies Vacuum, Reindex, Analyze and Optimize on the database every 15 days.
