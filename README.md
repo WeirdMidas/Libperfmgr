@@ -73,6 +73,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - Added memperfd, a better and adapted variant for current Androids of Matt Yang's qti-mem-opt. The focus is to reduce CPU usage of memory management while improving memory management. With the focus on stability and power consumption above all. This includes dynamic configuration of LMKD's minfree parameters based on the amount of memory on the device.
 - All the features and scripts from Matt Yang's original Perfd opt, with improvements and updates to work with current and updated rooting solutions.
 - ART optimizations coming from AOSP Master. The focus is to deliver better app execution, and in turn improve responsiveness across all profiles.
+- The module contains the activation and configuration of the UFFD garbage collection made for kernel 4.4 and which exists until today, where some custom ROMs use it to better manage memory with an addition of overhead, a good trade-off for devices with less memory. It is better than generational concurrent in terms of freeing memory, as both cannot work together, due to the overhead issues that they would cause, focus on meeting management needs and reduce the complexity of UFFD with simple flags.
 - Focuses on compatibility, stability and energy efficiency above all. With each update, an optimization for at least one platform is guaranteed, or a new SOC is added (but this depends on the users).
 
 # Profiles
