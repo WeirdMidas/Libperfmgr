@@ -64,8 +64,8 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 # Features
 - Cleanup script, which applies these cleanups every 7-15 days:
     - Fstrim on cache, system, data, persist, vendor, product and system_ext every 7 days.
-    - Compile, sync and cleanup of ART every 7 days.
     - Cleans cache and junk from apps every 7 days.
+    - Compiles all user apps into speed-profile and XML images every 7 days. Along with this, at the end of each month (specifically every 30 days) the final ART synchronization and cleaning is applied, to keep everything stable and taking up less space in the end.
     - Applies Vacuum, Reindex, Analyze and Optimize on the database every 15 days.
     - Applies Zipalign every 15 days.
 - Cgroup script, for better optimization of cgroups, threads, etc. without having to add or remove things.
