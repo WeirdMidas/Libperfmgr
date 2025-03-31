@@ -76,6 +76,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - Use kernel, system and build prop optimizations that are used in custom ROMs that are extremely optimized for user experience and battery management (like zygote preforking). The focus is to bring a bit of the experience of a custom ROM optimization to cell phones with stock ROMs (or ROMs very close to stock).
 - All the features and scripts from Matt Yang's original Perfd opt, with improvements and updates to work with current and updated rooting solutions.
 - Focuses on compatibility, stability and energy efficiency above all. With each update, an optimization for at least one platform is guaranteed, or a new SOC is added (but this depends on the users).
+- The module avoids using storage for very demanding functions, such as SWAP. Because of this, we will minimize writing to the internal storage, and in turn: extend the lifespan and maintain storage performance. We will try to make the device last as long as possible. So much so that the goal of the module is to make devices last longer and to be a temporary alternative for users who do not have the money to buy a powerful cell phone, or who want a module that controls consumption, performance, etc. through profiles.
 
 # Profiles
 - powersave: focused on saving as much energy as possible, without drastically impacting the performance and fluidity of the device (but it will still suffer in situations of load fluctuation).
