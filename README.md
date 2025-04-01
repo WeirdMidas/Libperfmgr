@@ -54,14 +54,21 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 ```
 
 # Explanation of each "Compatibility Stage":
-- Unadapted and Adapted: Specifically for SOCs that came with Matt Yang's Perfd-opt. Those that have not been adapted to be "improved" for today's consumption and efficiency will be flagged with this.
-- Initial: Basically SOCs that have initial compatibility and basic optimizations are in an initial optimization state and may not have their profiles correctly allocated.
-- Complete: With all optimizations complete. At least, among the profiles, there is consistency in the adjustments and greatly improved performance.
+# Compatibility Stages
+- Unadapted: SoCs that still use the old Matt Yang’s Perfd-opt settings and have not been optimized for a better balance between performance and power consumption.
 
-Additional:
-- Extra: For SOCs that come with perfboost adjustments. It is an additional.
-- Boost Fun: This is an additional perfboost, which is the "boost function", which, in this case: is a frequency boost for situations where the SOC needs immediate performance (such as opening apps) and this is normally found in SOCs with frequencies a little lower than the initial one.
-- Specialized: Fully optimized, both in profiles and in perfboost. SOCs with this level of optimization are considered at their peak of economy, performance, longevity and compatibility, perhaps reaching their maximum.
+- Adapted: SoCs that have already undergone an initial adaptation to improve efficiency and performance, but can still be optimized further.
+
+- Initial: SoCs that have basic compatibility with the design and have received initial optimizations. However, they may still have incomplete or not well-organized settings.
+
+- Complete: All major optimizations have been applied, ensuring greater consistency and improved performance. The performance profiles are already balanced.
+
+Extras and Advanced Levels:
+-Extra: For SoCs that already come with native perfboost settings (performance acceleration).
+
+- Boost Fun: An extra tweak to improve the SoC's responsiveness in moments that require immediate performance, such as opening applications or loading games quickly.
+
+- Specialized: The maximum level of optimization. Here, the SoC strikes the ideal balance between performance, power consumption, longevity and compatibility, taking full advantage of the available optimizations.
 
 # Features
 - Cleanup script, which applies these cleanups every 7-15 days:
