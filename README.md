@@ -59,7 +59,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - Complete: In the profiles section, optimizations are complete, allowing the user to use the adjustments as they see fit.
 - Initial + Extra: It is still in the testing phase but contains extra optimizations like Perfboost.
 - Complete + Extra: In addition to the complete traditional optimizations, it comes with perfboost optimization. To ensure better response and agility.
-- Specialized: Fully optimized, a SOC containing this indication is said to be fully optimized for maximum possible energy savings, compatibility and performance.
+- Specialized: Fully optimized, a SOC containing this indication is said to be fully optimized for maximum possible energy savings, compatibility and performance. SOCs with the specialized tag have "boost", which is signaled in some SOCs (which is basically the boost frequency for immediate performance situations such as opening apps, etc.)
 
 # Features
 - Cleanup script, which applies these cleanups every 7-15 days:
