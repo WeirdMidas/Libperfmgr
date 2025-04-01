@@ -65,7 +65,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 
 Extras and Advanced Levels:
 
--Extra: For SoCs that already come with native perfboost settings (performance acceleration).
+- Extra: For SoCs that already come with native perfboost settings (performance acceleration).
 
 - Boost Fun: An extra tweak to improve the SoC's responsiveness in moments that require immediate performance, such as opening applications or loading games quickly.
 
