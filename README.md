@@ -55,11 +55,13 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 
 # Explanation of each "Compatibility Stage":
 - Unadapted and Adapted: Specifically for SOCs that came with Matt Yang's Perfd-opt. Those that have not been adapted to be "improved" for today's consumption and efficiency will be flagged with this.
-- Initial: Does not have complete optimizations, is still in EXTREMELY EXPERIMENTAL phases! Needs extra feedback.
-- Complete: In the profiles section, optimizations are complete, allowing the user to use the adjustments as they see fit.
-- Initial + Extra: It is still in the testing phase but contains extra optimizations like Perfboost.
-- Complete + Extra: In addition to the complete traditional optimizations, it comes with perfboost optimization. To ensure better response and agility.
-- Specialized: Fully optimized, a SOC containing this indication is said to be fully optimized for maximum possible energy savings, compatibility and performance. SOCs with the specialized tag have "boost", which is signaled in some SOCs (which is basically the boost frequency for immediate performance situations such as opening apps, etc.)
+- Initial: Basically SOCs that have initial compatibility and basic optimizations are in an initial optimization state and may not have their profiles correctly allocated.
+- Complete: With all optimizations complete. At least, among the profiles, there is consistency in the adjustments and greatly improved performance.
+
+Additional:
+- Extra: For SOCs that come with perfboost adjustments. It is an additional.
+- Boost Fun: This is an additional perfboost, which is the "boost function", which, in this case: is a frequency boost for situations where the SOC needs immediate performance (such as opening apps) and this is normally found in SOCs with frequencies a little lower than the initial one.
+- Specialized: Fully optimized, both in profiles and in perfboost. SOCs with this level of optimization are considered at their peak of economy, performance, longevity and compatibility, perhaps reaching their maximum.
 
 # Features
 - Cleanup script, which applies these cleanups every 7-15 days:
