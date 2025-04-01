@@ -64,6 +64,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 - Complete: All major optimizations have been applied, ensuring greater consistency and improved performance. The performance profiles are already balanced.
 
 Extras and Advanced Levels:
+
 -Extra: For SoCs that already come with native perfboost settings (performance acceleration).
 
 - Boost Fun: An extra tweak to improve the SoC's responsiveness in moments that require immediate performance, such as opening applications or loading games quickly.
