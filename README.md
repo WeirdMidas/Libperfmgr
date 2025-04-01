@@ -52,12 +52,7 @@ If you want to help in another way, for example, recommending adjustments/tweaks
     sdm675 (Unadapted)
     sdm710/sdm712 (Unadapted)
 ```
-
-# Explanation of each "Compatibility Stage":
-# Compatibility Stages
-- Unadapted: SoCs that still use the old Matt Yang’s Perfd-opt settings and have not been optimized for a better balance between performance and power consumption.
-
-- Adapted: SoCs that have already undergone an initial adaptation to improve efficiency and performance, but can still be optimized further.
+- Unadapted And Adapted: SoCs that still use the old Matt Yang’s Perfd-opt settings and have not been optimized for a better balance between performance and power consumption. With adapted, are SoCs that have already undergone an initial adaptation to improve efficiency and performance, but can still be optimized further.
 
 - Initial: SoCs that have basic compatibility with the design and have received initial optimizations. However, they may still have incomplete or not well-organized settings.
 
