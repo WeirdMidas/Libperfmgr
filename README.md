@@ -84,10 +84,10 @@ Extras and Advanced Levels:
 - The module avoids using storage for very demanding functions, such as SWAP. Because of this, we will minimize writing to the internal storage, and in turn: extend the lifespan and maintain storage performance. We will try to make the device last as long as possible. So much so that the goal of the module is to make devices last longer and to be a temporary alternative for users who do not have the money to buy a powerful cell phone, or who want a module that controls consumption, performance, etc. through profiles.
 
 # Profiles
-- powersave: focused on saving as much energy as possible, without drastically impacting the performance and fluidity of the device (but it will still suffer in situations of load fluctuation).
-- balance: smoother than stock, and consumes less energy overall. Recommended for most users who want to save energy, but want to maintain performance in everyday use.
-- performance: without frequency limitation, focused on bringing the original performance that the device has but improved with general optimizations.
-- fast: brings stable performance considering the TDP of the device, focused on being 100% stable in most situations by being fast and quickly lowering frequencies.
+- powersave: Focuses on saving as much energy as possible, without compromising performance too much, but may experience performance drops under variable loads.
+- balance: Smoother than the default, saves energy and maintains a good balance of performance in everyday use. Ideal for most users.
+- performance: No frequency limitations, focuses on delivering maximum device performance with some general optimizations.
+- fast: Provides stable performance, quickly adjusting frequencies to remain fast and efficient without compromising stability.
 
 # Installation
 - Download zip in Release Page
