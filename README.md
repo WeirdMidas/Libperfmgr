@@ -34,7 +34,8 @@ If you want to help in another way, for example, recommending adjustments/tweaks
 
 # Prerequisites
 - Android 11-14. If you have a lower Android, it is not recommended to use the module because it is adapted for current Androids (where resource management has changed abruptly). Android 15 has not been tested yet because I am on an Android 14 ROM, so if you want to test on Android 15, feel free.
-- Don't have a messy or too "mimic" kernel (like many custom rom or custom kernel that tend to hide, modify and trap certain optimizations for reasons of "it's to specialize in my kernel")
+- 2GB of RAM or more (Because I use a specific parallelism for cell phones with 2GB and higher. Cell phones with lower memory cannot benefit from memory adjustments, so it is not recommended to use the module due to these problems).
+- Don't have a messy or too "spoiled" kernel (like many custom rom or custom kernel that tend to hide, modify and trap certain optimizations for reasons of "it's to specialize in my kernel")
 - Have a UFS storage. (Optional, it is just to ensure better I/O performance so that the module can be fully effective).
 - Follow the compatibility list, do not force the module on devices with incompatible SOCs.
 - Do not have too high expectations of the performance you will get, remember that this is a module that needs to adapt to many different users and socs, so some socs may have initial or full support.
