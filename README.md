@@ -118,5 +118,8 @@ Matt Yang — For the Original Module and Some Functions from qti-mem-opt and my
 Pedrozz, Tytydraco, korom42, yinwanxi and all the other contributors to their projects, I want to thank you all for helping with this project. I will try to extract as much as I can for each SOC because of all of you.
 ```
 
+# In case of bootloop
+If the bootloop occurs without allowing you to boot (i.e. enter the system), delete the system.prop inside the file and test. If you can, identify the prop that caused the bootloop and let me know so I can remove it.
+
 # Exclaimer
 The module will receive a rework for optimization reasons and personal motivations. The previous versions were deleted. I will notify and leave the download of the tested and stable version when I get it.
