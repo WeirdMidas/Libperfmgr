@@ -33,7 +33,7 @@ And then, answer this form:
 If you want to help in another way, for example, recommending adjustments/tweaks, you can make an issue with the nickname [adjustment suggestion] and then show what the adjustment was, ALONG with any benchmark you have done, to test if you really got any improvement with the adjustment.
 
 # Prerequisites
-- Android 11-15. If you have a lower Android, it is not recommended to use the module because it is adapted for current Androids (where resource management has changed abruptly).
+- Android 11-14. If you have a lower Android, it is not recommended to use the module because it is adapted for current Androids (where resource management has changed abruptly). Android 15 has not been tested yet because I am on an Android 14 ROM, so if you want to test on Android 15, feel free.
 - Don't have a messy or too "mimic" kernel (like many custom rom or custom kernel that tend to hide, modify and trap certain optimizations for reasons of "it's to specialize in my kernel")
 - Have a UFS storage. (Optional, it is just to ensure better I/O performance so that the module can be fully effective).
 - Follow the compatibility list, do not force the module on devices with incompatible SOCs.
