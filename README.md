@@ -76,7 +76,7 @@ Extras and Advanced Levels:
 - Cgroup script, for better optimization of cgroups, threads, etc. without having to add or remove things.
 - Added adjguard, for users who want to prevent LMK from killing their most beloved apps.
 - Added memperfd, a better and adapted variant for current Androids of Matt Yang's qti-mem-opt. The focus is to reduce CPU usage of memory management while improving memory management. With the focus on stability and power consumption above all. This includes a attempts to make the compression rate reach 3.8x (At least on my device, on others it may be lower or higher). Also, memperfd comes with selectable options that are applied after boot, such as:
-  - ZRAM size: If you are not satisfied with the amount of ZRAM, you can change it to the value you want to reduce or increase.
+  - ZRAM size: If you are not satisfied with the amount of ZRAM, you can change it to the value you want to reduce or increase. Remember: The amount of ZRAM in the presets is based on maximizing swapcache while avoiding an overly large disk size. So a 4gb zram would be equivalent to 1440mb, a 6gb would be 2160mb and so on.
   - ZRAM algorithm: If you want to change the ZRAM algorithm from lz4 to another, feel free.
   - ZRAM Deduplication: If you feel confident and have a powerful processor, but little available memory, you can choose to activate ZRAM deduplication, allowing you to save more memory with the ZRAM capable of handling more load, at the expense of more processing power being consumed.
 - ART optimizations coming from AOSP Master. The focus is to deliver better app execution, and in turn improve responsiveness across all profiles.
