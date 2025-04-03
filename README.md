@@ -88,10 +88,54 @@ Extras and Advanced Levels:
 - The module avoids using storage for very demanding functions, such as SWAP. Because of this, we will minimize writing to the internal storage, and in turn: extend the lifespan and maintain storage performance. We will try to make the device last as long as possible. So much so that the goal of the module is to make devices last longer and to be a temporary alternative for users who do not have the money to buy a powerful cell phone, or who want a module that controls consumption, performance, etc. through profiles.
 
 # Profiles
-- powersave: Focuses on saving as much energy as possible, without compromising performance too much, but may experience performance drops under variable loads.
-- balance: Smoother than the default, saves energy and maintains a good balance of performance in everyday use. Ideal for most users.
-- performance: No frequency limitations, focuses on delivering maximum device performance with some general optimizations.
-- fast: Provides stable performance, quickly adjusting frequencies to remain fast and efficient without compromising stability.
+- powersave: based on balance mode, but with lower max frequency
+- balance: smoother than the stock config with lower power consumption
+- performance: no frequency limitation
+- fast: providing stable performance capacity considering the TDP limitation of device chassis
+
+```plain
+sdm865
+- powersave:    1.8+1.6+2.4g, boost 1.8+2.0+2.6g, min 0.3+0.7+1.1
+- balance:      1.8+2.0+2.6g, boost 1.8+2.4+2.7g, min 0.7+0.7+1.1
+- performance:  1.8+2.4+2.8g, boost 1.8+2.4+2.8g, min 0.7+0.7+1.1
+- fast:         1.8+2.0+2.7g, boost 1.8+2.4+2.8g, min 0.7+1.2+1.2
+
+sdm855/sdm855+
+- powersave:    1.7+1.6+2.4g, boost 1.7+2.0+2.6g, min 0.3+0.7+0.8
+- balance:      1.7+2.0+2.6g, boost 1.7+2.4+2.7g, min 0.5+0.7+0.8
+- performance:  1.7+2.4+2.8g, boost 1.7+2.4+2.8/2.9g, min 0.5+0.7+0.8
+- fast:         1.7+2.0+2.7g, boost 1.7+2.4+2.8/2.9g, min 0.5+1.2+1.2
+
+sdm845
+- powersave:    1.7+2.0g, boost 1.7+2.4g, min 0.3+0.3
+- balance:      1.7+2.4g, boost 1.7+2.7g, min 0.5+0.8
+- performance:  1.7+2.8g, boost 1.7+2.8g, min 0.5+0.8
+- fast:         1.7+2.4g, boost 1.7+2.8g, min 0.5+1.6
+
+sdm765/sdm765g
+- powersave:    1.8+1.7+2.0g, boost 1.8+2.0+2.2g, min 0.3+0.6+0.8
+- balance:      1.8+2.0+2.2g, boost 1.8+2.2+2.3/2.4g, min 0.5+0.6+0.6
+- performance:  1.8+2.2+2.3g, boost 1.8+2.2+2.3/2.4g, min 0.5+0.6+0.8
+- fast:         1.8+2.0+2.2g, boost 1.8+2.2+2.3/2.4g, min 0.5+1.1+1.4
+
+sdm730/sdm730g
+- powersave:    1.7+1.5g, boost 1.7+1.9g, min 0.3+0.3
+- balance:      1.7+1.9g, boost 1.7+2.1g, min 0.5+0.6
+- performance:  1.8+2.2g, boost 1.8+2.2g, min 0.5+0.6
+- fast:         1.8+1.9g, boost 1.8+2.2g, min 0.5+1.2
+
+sdm675
+- powersave:    1.7+1.5g, boost 1.7+1.7g, min 0.3+0.3
+- balance:      1.7+1.7g, boost 1.7+1.9g, min 0.5+0.6
+- performance:  1.8+2.0g, boost 1.8+2.0g, min 0.5+0.6
+- fast:         1.8+1.7g, boost 1.8+2.0g, min 0.5+1.2
+
+sdm710/sdm712
+- powersave:    1.7+1.8g, boost 1.7+2.0g, min 0.3+0.3
+- balance:      1.7+2.0g, boost 1.7+2.2/2.3g, min 0.5+0.6
+- performance:  1.7+2.2g, boost 1.7+2.2/2.3g, min 0.5+0.6
+- fast:         1.7+2.0g, boost 1.7+2.2/2.3g, min 0.5+1.5
+```
 
 # Installation
 - Download zip in Release Page
