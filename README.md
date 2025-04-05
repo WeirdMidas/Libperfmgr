@@ -96,43 +96,46 @@ Extras and Advanced Levels:
 - fast: providing stable performance capacity considering the TDP limitation of device chassis
 
 ```plain
-sdm865
+sdm865 (Schedutil)
 - powersave:    1.8+1.6+2.4g, boost 1.8+2.0+2.6g, min 0.3+0.7+1.1
 - balance:      1.8+2.0+2.6g, boost 1.8+2.4+2.7g, min 0.7+0.7+1.1
 - performance:  1.8+2.4+2.8g, boost 1.8+2.4+2.8g, min 0.7+0.7+1.1
 - fast:         1.8+2.0+2.7g, boost 1.8+2.4+2.8g, min 0.7+1.2+1.2
 
-sdm855/sdm855+
+sdm855/sdm855+ (Schedutil)
 - powersave:    1.7+1.6+2.4g, boost 1.7+2.0+2.6g, min 0.3+0.7+0.8
 - balance:      1.7+2.0+2.6g, boost 1.7+2.4+2.7g, min 0.5+0.7+0.8
 - performance:  1.7+2.4+2.8g, boost 1.7+2.4+2.8/2.9g, min 0.5+0.7+0.8
 - fast:         1.7+2.0+2.7g, boost 1.7+2.4+2.8/2.9g, min 0.5+1.2+1.2
 
-sdm845
+sdm845 (Schedutil)
 - powersave:    1.7+2.0g, boost 1.7+2.4g, min 0.3+0.3
 - balance:      1.7+2.4g, boost 1.7+2.7g, min 0.5+0.8
 - performance:  1.7+2.8g, boost 1.7+2.8g, min 0.5+0.8
 - fast:         1.7+2.4g, boost 1.7+2.8g, min 0.5+1.6
 
-sdm765/sdm765g
+sdm765/sdm765g (Schedutil)
 - powersave:    1.8+1.7+2.0g, boost 1.8+2.0+2.2g, min 0.3+0.6+0.8
 - balance:      1.8+2.0+2.2g, boost 1.8+2.2+2.3/2.4g, min 0.5+0.6+0.6
 - performance:  1.8+2.2+2.3g, boost 1.8+2.2+2.3/2.4g, min 0.5+0.6+0.8
 - fast:         1.8+2.0+2.2g, boost 1.8+2.2+2.3/2.4g, min 0.5+1.1+1.4
 
-sdm730/sdm730g
+sdm730/sdm730g (Schedutil)
 - powersave:    1.7+1.5g, boost 1.7+1.9g, min 0.3+0.3
 - balance:      1.7+1.9g, boost 1.7+2.1g, min 0.5+0.6
 - performance:  1.8+2.2g, boost 1.8+2.2g, min 0.5+0.6
 - fast:         1.8+1.9g, boost 1.8+2.2g, min 0.5+1.2
 
-sdm675
+sdm680 (Schedutil)
+- It's still in the early stages, so there are no changes in frequencies across profiles
+
+sdm675 (Schedutil)
 - powersave:    1.7+1.5g, boost 1.7+1.7g, min 0.3+0.3
 - balance:      1.7+1.7g, boost 1.7+1.9g, min 0.5+0.6
 - performance:  1.8+2.0g, boost 1.8+2.0g, min 0.5+0.6
 - fast:         1.8+1.7g, boost 1.8+2.0g, min 0.5+1.2
 
-sdm710/sdm712
+sdm710/sdm712 (Schedutil)
 - powersave:    1.7+1.8g, boost 1.7+2.0g, min 0.3+0.3
 - balance:      1.7+2.0g, boost 1.7+2.2/2.3g, min 0.5+0.6
 - performance:  1.7+2.2g, boost 1.7+2.2/2.3g, min 0.5+0.6
