@@ -165,6 +165,7 @@ Install vtools and bind APPs to power mode.
 
 ```plain
 Matt Yang — For the Original Module and Some Functions from qti-mem-opt and my inspiration for create this.
+yinwanxi - For the uperf libcgroup, I am very grateful, and you were one of my inspirations at the time that uperf worked on my cell phone (before it suffered from data corruption nowadays) it was one of the famous "game changes" that I had and that some pages talked a lot about.
 Pedrozz, Tytydraco, korom42, yinwanxi and all the other contributors to their projects, I want to thank you all for helping with this project. I will try to extract as much as I can for each SOC because of all of you.
 ```
 
