@@ -5,9 +5,9 @@ A version of libperfmgr that runs via daemon on any SOC that has it installed, a
 A user-space libperfmgr project, allowing Snapdragon, MediaTek, and other SoCs that don't natively have libperfmgr to manually add it. Since it's a "user-space" version, there are still complications, so check out more about the project in the repository.
 
 ## Main Features
-- The ability to insert any sysfs into powerhint.json, allowing you to tailor the performance and efficiency needs of your individual SOC based on your own sysfs
-- Addition of hints, allowing the user to freely customize the hints they want, with the initial addition of two: INTERACTION and LAUNCH
-- Disabling the Boost Framework in the ROM to make way for libperfmgr in user space
+- Ability to add any sysfs to hints/nodes equal to the original libperfmgr
+- hints the same as libperfmgr, for now there is only INTERACTION and LAUNCH
+- Replaces the ROM's default boost framework with our user-space libperfmgr
 
 ## Requirements
 
