@@ -6,7 +6,7 @@ A user-space libperfmgr project, allowing Snapdragon, MediaTek, and other SoCs t
 
 ## Main Features
 - Ability to add any sysfs to hints/nodes equal to the original libperfmgr
-- hints the same as libperfmgr, for now there is only INTERACTION and LAUNCH
+- Hints similar to Google's Libperfmgr. But, for now: only TOUCH_SLOP, INTERACTION and LAUNCH are supported
 - Replaces the ROM's default boost framework with our user-space libperfmgr
 
 ## Requirements
