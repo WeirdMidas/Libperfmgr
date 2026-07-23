@@ -1,21 +1,22 @@
 # Libperfmgr
-**A Boost Framework for Android that allows you to replace the ROM's Boost Framework and implement a solution similar to Libperfmgr on Google Pixel devices.**
+**A libperfmgr in user space, allowing the user to customize their own hints to the scheduler.**
 
 ## Main Functions
 
-- Dynamically set parameters to control performance release based on the identified scenario type, supporting all `sysfs` nodes. For now, there are only three supported scenarios: INTERACTION, TOUCH_SLOP, and LAUNCH.
 - Reads Android touchscreen input signals from the Linux layer, recognizing clicks and swipes.
 - Monitors cpuset group update operations to recognize app switching.
-- Supports Android 10 or higher.
+- It only supports Android 10 or higher.
 - It only supports ARM64.
-- Supports one-click installation via Magisk, version 28.4 and above.
+- It currently only supports Snapdragon SoCs.
+- SELinux maintains `enforcing` in most cases unless it's in heavily modified ROMs.
 - Does not depend on any Android application layer framework or third-party kernel.
+- Provides parameter-tuned configuration files for most popular hardware platforms. Currently supported are three hints: INTERACTION, TOUCH_SLOP, and LAUNCH.
 
-## WARNING! 
+## Requirements
 
-Do not use the module without knowing this:
-- Download the module's zip file and extract the powerhint.json file (located in the module's /bin folder). From there, make the modifications you want, preferably modifying the cluster frequencies to your desired level, changing the paths to the correct ones, etc.
-- This module is not a "install and forget" module; this manual intervention is necessary to avoid using parameters incompatible with your SOC.
+- A non-unstable ROM or custom kernel
+- Install via Magisk (or another root manager, but compatibility is not guaranteed)
+- Have busybox installed (Optional)
 
 ## Credits
 ```
