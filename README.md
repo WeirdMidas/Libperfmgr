@@ -1,21 +1,21 @@
 # Libperfmgr
-A version of libperfmgr that runs via daemon on any SOC that has it installed, allowing devices to replace their Boost Framework solutions with this AOSP solution.
+**A Boost Framework for Android that allows you to replace the ROM's Boost Framework and implement a solution similar to Libperfmgr on Google Pixel devices.**
 
-## Overview
-A user-space libperfmgr project, allowing Snapdragon, MediaTek, and other SoCs that don't natively have libperfmgr to manually add it. Since it's a "user-space" version, there are still complications, so check out more about the project in the repository.
+## Main Functions
 
-## Main Features
-- Ability to add any sysfs to hints/nodes equal to the original libperfmgr
-- Hints similar to Google's Libperfmgr. But, for now: only TOUCH_SLOP, INTERACTION and LAUNCH are supported
-- Replaces the ROM's default boost framework with our user-space libperfmgr
+- Dynamically set parameters to control performance release based on the identified scenario type, supporting all `sysfs` nodes. For now, there are only three supported scenarios: INTERACTION, TOUCH_SLOP, and LAUNCH.
+- Reads Android touchscreen input signals from the Linux layer, recognizing clicks and swipes.
+- Monitors cpuset group update operations to recognize app switching.
+- Supports Android 10 or higher.
+- It only supports ARM64.
+- Supports one-click installation via Magisk, version 28.4 and above.
+- Does not depend on any Android application layer framework or third-party kernel.
 
-## Requirements
+## WARNING! 
 
-- Android 8 or higher
-- A non-unstable ROM or custom kernel
-- Magisk (or another root manager, but be aware that it may not be as compatible)
-- Only Qualcomm SOCs are currently supported
-- Have busybox installed (Optional)
+Do not use the module without knowing this:
+- Download the module's zip file and extract the powerhint.json file (located in the module's /bin folder). From there, make the modifications you want, preferably modifying the cluster frequencies to your desired level, changing the paths to the correct ones, etc.
+- This module is not a "install and forget" module; this manual intervention is necessary to avoid using parameters incompatible with your SOC.
 
 ## Credits
 ```
