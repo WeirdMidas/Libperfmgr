@@ -10,7 +10,7 @@
 - It currently only supports Snapdragon SoCs.
 - SELinux maintains `enforcing` in most cases unless it's in heavily modified ROMs.
 - Does not depend on any Android application layer framework or third-party kernel.
-- Provides parameter-tuned configuration files for most popular hardware platforms. Currently supported are three hints: INTERACTION, TOUCH_SLOP, and LAUNCH.
+- Provides parameter-tuned configuration hints for most popular hardware platforms. Which currently supports three hints: INTERACTION, TOUCH_SLOP, and LAUNCH.
 
 ## Requirements
 
