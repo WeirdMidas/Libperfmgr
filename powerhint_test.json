@@ -132,24 +132,6 @@
       "NodeTargets": [
         {
           "Node": "CPULittleClusterMinFreq",
-          "Value": "1190400"
-        },
-        {
-          "Node": "CPUBigClusterMinFreq",
-          "Value": "1344000"
-        },
-        {
-          "Node": "GPUMinFreq",
-          "Value": "1025000000"
-        }
-      ]
-    },
-    {
-      "PowerHint": "TOUCH_SLOP",
-      "Duration": 200,
-      "NodeTargets": [
-        {
-          "Node": "CPULittleClusterMinFreq",
           "Value": "1516800"
         },
         {
@@ -162,7 +144,7 @@
         },
         {
           "Node": "SchedBusyHystEnableCPUs",
-          "Value": "240"
+          "Value": "255"
         },
         {
           "Node": "GPUMinFreq",
@@ -185,10 +167,6 @@
         {
           "Node": "SchedBoost",
           "Value": "1"
-        },
-        {
-          "Node": "SchedBusyHystEnableCPUs",
-          "Value": "240"
         },
         {
           "Node": "GPUMinFreq",
