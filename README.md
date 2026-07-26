@@ -1,5 +1,5 @@
 # Libperfmgr
-**- A user-space libperfmgr in Magisk module format that aims to be as close as possible to Google's libperfmgr.**
+**A user-space libperfmgr in Magisk module format that aims to be as close as possible to Google's libperfmgr.**
 
 ## Main Functions
 
